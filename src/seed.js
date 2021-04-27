@@ -5,8 +5,8 @@ export function seedDatabase(firebase) {
         username: 'karl',
         fullName: 'Karl Hadwen',
         emailAddress: 'karlhadwen@gmail.com',
-        following: ['2'],
-        followers: ['2', '3', '4'],
+        following: ['MxPMNmufvzNmmhvQbYscTQinwVu2','g88q4PE2WYXj6yfQbr5wDC6LFgT2','owvy45PXgUf7QoTbDPDqENRk3bU2'],
+        followers: ['MxPMNmufvzNmmhvQbYscTQinwVu2'],
         dateCreated: Date.now()
       },
       {
@@ -14,7 +14,7 @@ export function seedDatabase(firebase) {
         username: 'raphael',
         fullName: 'Raffaello Sanzio da Urbino',
         emailAddress: 'raphael@sanzio.com',
-        following: [],
+        following: ['IE0jwanaeRYArjfRaPihd5cOcEq2'],
         followers: ['IE0jwanaeRYArjfRaPihd5cOcEq2'],
         dateCreated: Date.now()
       },
@@ -50,7 +50,7 @@ export function seedDatabase(firebase) {
         .collection('photos')
         .add({
           photoId: i,
-          userId: '2',
+          userId: 'MxPMNmufvzNmmhvQbYscTQinwVu2',
           imageSrc: `/images/users/raphael/${i}.jpg`,
           caption: 'Saint George and the Dragon',
           likes: [],
