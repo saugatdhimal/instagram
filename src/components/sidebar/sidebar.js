@@ -6,7 +6,7 @@ import Suggestions from './suggestions'
 
 function Sidebar() {
     const { user } = useContext(UserContext)
-    const { user: {docId, username, fullName, userId, following}} = useUser(user?.uid)
+    const { activeUser: {docId, username, fullName, userId, following}} = useUser(user?.uid)
     return (
         <div>
             <User username={username} fullName={fullName}/>

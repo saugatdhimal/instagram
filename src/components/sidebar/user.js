@@ -15,6 +15,9 @@ function User({ username, fullName }) {
           className="rounded-full w-16 mr-5"
           src={`/images/avatars/${username}.jpg`}
           alt=""
+          onError={(e) => {
+            e.target.src = `/images/avatars/default.png`;
+          }}
         />
       </div>
       <div >
