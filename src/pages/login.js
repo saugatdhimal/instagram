@@ -31,7 +31,7 @@ function Login() {
   }, []);
 
   return (
-    <div className="container flex mx-auto max-w-screen-sm items-center h-screen">
+    <div className="container flex mx-auto max-w-screen-md w-screen px-5 items-center h-screen">
       <div className="flex w-3/5">
         <img
           src="/images/iphone-with-profile.jpg"
@@ -80,7 +80,7 @@ function Login() {
           <p className="text=sm">
             Don't have an account?{" "}
             <Link to={SIGN_UP} className="font-bold text-blue-medium">
-              Sign up
+              Sign-up
             </Link>
           </p>
         </div>

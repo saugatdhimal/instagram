@@ -48,7 +48,7 @@ function AddComment({ docId, comments, setComments, commentInput }) {
         }
       >
         <input
-          className="w-full h-full outline-none text-sm text-gray-base"
+          className="w-full h-full text-sm text-gray-base"
           type="text"
           aria-label="Add a comment"
           autoComplete="off"

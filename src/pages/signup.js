@@ -58,7 +58,7 @@ function SignUp() {
   }, []);
 
   return (
-    <div className="container flex mx-auto max-w-screen-sm items-center h-screen">
+    <div className="container flex mx-auto max-w-screen-md w-screen px-5 items-center h-screen">
       <div className="flex w-3/5">
         <img
           src="/images/iphone-with-profile.jpg"
