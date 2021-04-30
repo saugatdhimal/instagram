@@ -9,7 +9,7 @@ function Header() {
   const { user } = useContext(UserContext);
   return (
     <div className="h-14 bg-white border-b border-gray-primary mb-8">
-      <div className="container mx-auto max-w-screen-lg h-full">
+      <div className="container mx-auto max-w-screen-lg px-11 h-full">
         <div className="flex justify-between h-full">
           <div className="text-gray-700 text-center flex items-center align-items cursor-pointer">
             <h1 className="flex justify-center w-full">

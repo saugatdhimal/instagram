@@ -8,7 +8,7 @@ function Sidebar() {
     const { user } = useContext(UserContext)
     const { activeUser: {docId, username, fullName, userId, following}} = useUser(user?.uid)
     return (
-        <div>
+        <div className="hidden md:flex flex-col">
             <User username={username} fullName={fullName}/>
             <Suggestions userId={userId} following={following} loggedInUserDocId={docId}/>
         </div>
