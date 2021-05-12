@@ -37,7 +37,7 @@ function App() {
             <Route path={ROUTES.DASHBOARD} exact>
               {user ? <Dashboard /> : <Redirect to={ROUTES.LOGIN} />}
             </Route>
-            <Route path={ROUTES.PROFILE} component={Profile} exact />
+            {/* <Route path={ROUTES.PROFILE} component={Profile} exact /> */}
             <Route path={ROUTES.NOT_FOUND} component={NotFound} exact />
           </Switch>
         </Suspense>

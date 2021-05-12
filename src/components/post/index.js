@@ -19,6 +19,7 @@ function Post({ content }) {
         totalLikes={content.likes.length}
         likedPhoto={content.userLikedPhoto}
         username={content.username}
+        caption={content.caption}
         handleFocus={handleFocus}
       />
       <Comments

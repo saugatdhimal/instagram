@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import FirebaseContext from "../../context/firebase";
 import UserContext from "../../context/user";
 
-function Actions({ docId, totalLikes, likedPhoto, handleFocus }) {
+function Actions({ docId, totalLikes, likedPhoto, handleFocus, username, caption }) {
   const { firebase, FieldValue } = useContext(FirebaseContext);
   const {
     user: { uid: userId },
@@ -28,11 +28,10 @@ function Actions({ docId, totalLikes, likedPhoto, handleFocus }) {
 
   return (
     <>
-      <div className="flex p-3">
+      <div className="flex p-3 pb-1">
         <svg
           onClick={handleToggleLiked}
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
           fill={`${toggleLiked ? "red" : "none"}`}
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -45,7 +44,7 @@ function Actions({ docId, totalLikes, likedPhoto, handleFocus }) {
         <svg
           onClick={handleFocus}
           xmlns="http://www.w3.org/2000/svg"
-          class="h-8 w-8"
+          className="w-8"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -57,7 +56,7 @@ function Actions({ docId, totalLikes, likedPhoto, handleFocus }) {
       <p className="font-bold text-sm px-4">
         {likes === 1 ? `${likes} like` : `${likes} likes`}
       </p>
-      <p></p>
+      {/* <p className="font-bold text-sm px-4 mt-1">{username} <span className="font-medium ml-1"> {caption}</span></p> */}
     </>
   );
 }

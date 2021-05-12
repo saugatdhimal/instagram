@@ -17,7 +17,7 @@ function Timeline() {
         photos.map((content) => <Post key={content.docId} content={content}/>)
       )}
     </div>
-  );
+  )
 }
 
 export default Timeline;
